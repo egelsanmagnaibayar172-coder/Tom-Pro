@@ -6,51 +6,43 @@ import Togsgol from "@/components/Togsgol";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
-      <header className="flex items-center justify-between w-full max-w-[1440px] p-4 shadow-md bg-white dark:bg-gray-800">
-        <h1 className="text-xl font-bold">Egelsan</h1>
+    <div className="flex flex-col items-center  justify-center bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+      <header className="w-full bg-white dark:bg-gray-800 shadow-md">
+        <div className="flex items-center justify-between w-full px-4 md:px-8 lg:px-16 py-4">
+          {/* LEFT */}
+          <h1 className="text-lg md:text-xl lg:text-2xl font-bold">Egelsan</h1>
 
-        <nav className="hidden md:flex">
-          <ul className="flex space-x-4">
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-500 dark:hover:text-gray-300"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-500 dark:hover:text-gray-300"
-              >
-                Work
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-500 dark:hover:text-gray-300"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-500 dark:hover:text-gray-300"
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <button className="bg-gray-500 dark:bg-gray-600 text-white px-3 py-2 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-500 transition-colors">
-                Download CV
-              </button>
-            </li>
-          </ul>
-        </nav>
+          {/* RIGHT */}
+          <nav className="hidden md:flex">
+            <ul className="flex gap-6 items-center">
+              <li>
+                <a href="#" className="hover:text-gray-500">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-500">
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-500">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-500">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <button className="bg-gray-500 text-white px-3 py-1.5 rounded-lg hover:bg-gray-700">
+                  Download CV
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       {/* Main Section */}
